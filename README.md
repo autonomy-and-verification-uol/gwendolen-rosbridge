@@ -11,6 +11,6 @@ To test:
 5. Start ROS with rosbridge in a terminal using `roslaunch rosbridge_server rosbridge_websocket.launch`
 6. Open another terminal and use the command `rostopic echo /java_to_ros` (this is where messages from Gwendolen will appear)
 7. In Eclipse, go to `src/examples/gwendolen/ros`, right-click hello.ail, select run as > run configurations, type run-AIL in the search box (should be there if MCAPL was installed correctly), and click on run
-⋅⋅⋅* You should see the messages from Gwendolen agents in the terminal from step 6
+   * You should see the messages from Gwendolen agents in the terminal from step 6
 8. To test the subscriber, open another terminal and type `rostopic pub ros_to_java std_msgs/String "hello from ros"`
-⋅⋅⋅* You should see "hello from ros" in the Eclipse terminal
+   * You should see "hello from ros" in the Eclipse terminal
