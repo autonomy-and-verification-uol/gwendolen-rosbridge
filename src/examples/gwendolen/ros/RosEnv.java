@@ -17,7 +17,7 @@ import ros.tools.MessageUnpacker;
 
 
 public class RosEnv extends DefaultEnvironment{
-	static final String logname = "gwendolen.ros.TestEnv";
+	static final String logname = "gwendolen.ros.RosEnv";
 	
 	RosBridge bridge = new RosBridge();
 	
