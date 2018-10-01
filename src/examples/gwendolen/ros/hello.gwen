@@ -13,4 +13,4 @@ test [perform]
 
 :Plans:
 
-+!test [perform] : {True} <- helloros;
++!test [perform] : {True} <- hello_ros;

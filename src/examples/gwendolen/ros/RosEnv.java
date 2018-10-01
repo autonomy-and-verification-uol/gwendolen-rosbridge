@@ -53,13 +53,13 @@ public class RosEnv extends DefaultEnvironment{
 	 */
 	public Unifier executeAction(String agName, Action act) throws AILexception {
 		String actionname = act.getFunctor();
-		if (actionname.equals("helloros")) {
-			helloros();
+		if (actionname.equals("hello_ros")) {
+			hello_ros();
 		} 
 		return super.executeAction(agName, act);
 	}
 	
-	public void helloros() {
+	public void hello_ros() {
 		Publisher pub = new Publisher("/java_to_ros", "std_msgs/String", bridge);
 		
 		for(int i = 0; i < 100; i++) {
