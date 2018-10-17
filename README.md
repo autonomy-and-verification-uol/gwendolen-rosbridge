@@ -18,3 +18,15 @@ To test:
    * You should see "hello from ros" in the Eclipse terminal
 
 If you require extra message types, clone the code from [java_rosbridge](https://github.com/h2r/java_rosbridge), add the messages you require (`src/ros/msgs`), run `mvn package` and copy the newly generated jar `target/java_rosbridge-2.0.2-jar-with-dependencies.jar` to `lib/3rdparty folder` in MCAPL, rename it to `java_rosbridge_all.jar` and overwrite it.
+
+## Message types available in the current jar:
+- actionlib_msgs: GoalId (Time stamp, String id)
+- geometry_msgs: Twist (Vector3 linear, Vector3 angular)
+- geometry_msgs: Vector3 (double x, double y, double z)
+- move_base_msgs: MoveBaseActionResult (Header header, Status status, Result result)
+- move_base_msgs: Result ()
+- move_base_msgs: Status (GoalId goal_id, String status, String text)
+- sensor_msgs: Image(Header header, int height, int width, String encoding, int is_bigendian, int step, byte[] data) 
+- std_msgs: Header(int seq, Time stamp, String frame_id)
+- std_msgs: PrimitiveMsg(data)
+- std_msgs: Time(int secs, int nsecs)
