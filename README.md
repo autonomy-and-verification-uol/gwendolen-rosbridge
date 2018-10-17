@@ -16,3 +16,5 @@ To test:
    * You should see the messages from Gwendolen agents in the terminal from step 6
 10. To test the subscriber, open another terminal and type `rostopic pub ros_to_java std_msgs/String "hello from ros"`
    * You should see "hello from ros" in the Eclipse terminal
+
+If you require extra message types, clone the code from [java_rosbridge](https://github.com/h2r/java_rosbridge), add the messages you require (`src/ros/msgs`), run `mvn package` and copy the newly generated jar `target/java_rosbridge-2.0.2-jar-with-dependencies.jar` to `lib/3rdparty folder` in MCAPL, rename it to `java_rosbridge_all.jar` and overwrite it.
