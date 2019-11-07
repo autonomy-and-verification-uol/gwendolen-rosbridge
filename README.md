@@ -7,7 +7,7 @@ To test:
 1. Install [MCAPL](https://sourceforge.net/projects/mcapl/) using the Eclipse method, and make sure it is working
 2. Install ROS, any version, and make sure it is working
 3. Install [Rosbridge](http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge) for the ROS version that you installed (and make sure it is working!)
-4. Copy `java_rosbridge_all.jar` to `lib/3rdparty folder` in MCAPL
+4. Copy `java_rosbridge_all.jar` to `lib/3rdparty` folder in MCAPL
 5. Edit `.classpath` found in the root of MCAPL, and add the line `<classpathentry kind="lib" path="lib/3rdparty/java_rosbridge_all.jar"/>`
 6. Copy the `src/examples/gwendolen/ros` folder to MCAPL root
 7. Start ROS with rosbridge in a terminal using `roslaunch rosbridge_server rosbridge_websocket.launch`
