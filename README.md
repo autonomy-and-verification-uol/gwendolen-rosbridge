@@ -4,7 +4,7 @@ Gwendolen environment that allows agents to publish/subscribe to ROS topics usin
 We are using the [java_rosbridge](https://github.com/h2r/java_rosbridge) library to connect to rosbridge using Java code.
 
 To test:
-1. Install [MCAPL](https://sourceforge.net/projects/mcapl/) using the Eclipse method, and make sure it is working
+1. Install [MCAPL](https://autonomy-and-verification.github.io/tools/mcapl) using the Eclipse method, and make sure it is working
 2. Install ROS, any version, and make sure it is working
 3. Install [Rosbridge](http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge) for the ROS version that you installed (and make sure it is working!)
 4. Copy `java_rosbridge_all.jar` to `lib/3rdparty` folder in MCAPL
