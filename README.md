@@ -9,6 +9,7 @@ To test:
 3. Install [Rosbridge](http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge) for the ROS version that you installed (and make sure it is working!)
 4. Copy `java_rosbridge_all.jar` to `lib/3rdparty` folder in MCAPL
 5. Edit `.classpath` found in the root of MCAPL, and add the line `<classpathentry kind="lib" path="lib/3rdparty/java_rosbridge_all.jar"/>`
+   * Make sure you refresh the project if using Eclipse. Otherwise if this does not work, it may be necessary to add the above jar to the project dependencies manually in the Eclipse properties if using Eclipse, or in the build.xml (from the root folder of MCAPL) if using from the command line
 6. Copy the `src/examples/gwendolen/ros` folder to MCAPL root
 7. Start ROS with rosbridge in a terminal using `roslaunch rosbridge_server rosbridge_websocket.launch`
 8. Open another terminal and use the command `rostopic echo /java_to_ros` (this is where messages from Gwendolen will appear)
